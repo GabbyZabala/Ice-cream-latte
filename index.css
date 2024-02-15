@@ -1,37 +1,135 @@
 body {
     margin: 0;
     padding: 0;
+    background-color: #fab3ad;
 }
-header {
+nav {
     position: sticky;
         top: 0;
-        left: 0;
     height: 5vw;
+    padding: 5px;
     display: flex;
         align-items: center;
-        justify-content: space-between;
-    background-color: lightblue;
-    padding: 5px;
+        justify-content: center; 
+    background-image: url(spy-x-family-anya-heh-anime-removebg-preview.png);
+    background-repeat: no-repeat;
+    background-size: 25%;
+    background-position-x: 20%;
+    background-position-y: 80%;
 }
-lobby {
+    .header_container {
+        width: 95%;
+        height: 100%;
+        display: flex;
+            align-items: top;
+            justify-content: space-between;
+    }
+        .logo {
+            display: flex;
+                justify-content: center;
+                align-items: center;
+            width: 20%;
+            text-align: center;
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 2vw;
+            font-weight: bold;
+            color: #2c2827;
+        }
+        .lam {
+            display: flex;
+                align-items: center;
+            font-size: 1vw;
+        }
+        .account {
+            width: 5vw;
+            height: 5vw;
+            border-radius: 50%;
+            border: solid;
+            background-image: url(spy-x-family-anya-heh-anime-removebg-preview.png);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+        }
+section {
     width: 100%;
     height: 80%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
+/* V limitation area V */
 @media only screen and (max-width: 600px) { /*phone size*/
+    /*scrolling components start*/
+    /* width */
+    ::-webkit-scrollbar {
+        width: 1px;
+    }
+    /* Track */
+    ::-webkit-scrollbar-track {
+        background: #f1f1f100;
+    }
+    /* Handle */
+    ::-webkit-scrollbar-thumb {
+        border-radius: 50%;
+        background: #fab3ad;
+    } 
+    /* Handle on hover */
+    ::-webkit-scrollbar-thumb:hover {
+        background: #2c2827;
+    }
+    /*scrolling components end*/
     .pctabs, .tabletabs {
         display: none;
     }
 }
 
 @media only screen and (min-width: 601px) and (max-width: 900px) {/* tablet size */
+    /*scrolling components start*/
+    /* width */
+    ::-webkit-scrollbar {
+        position: absolute;
+        width: 2px;
+    }
+    /* Track */
+    ::-webkit-scrollbar-track {
+        background: #f1f1f100;
+    }
+    /* Handle */
+    ::-webkit-scrollbar-thumb {
+        border-radius: 50%;
+        background: #fab3ad;
+    } 
+    /* Handle on hover */
+    ::-webkit-scrollbar-thumb:hover {
+        background: #2c2827;
+    }
+    /*scrolling components end*/
     .pctabs, .phonetabs {
         display: none;
     }
 }
 @media only screen and (min-width: 901px) { /*pc size*/
+    /*scrolling components start*/
+    /* width */
+    ::-webkit-scrollbar {
+        width: 5px;
+    }
+    /* Track */
+    ::-webkit-scrollbar-track {
+        background: #f1f1f100;
+    }
+    /* Handle */
+    ::-webkit-scrollbar-thumb {
+        border-radius: 5px;
+        border-width: 1px;
+        border-style:dotted;
+        background: #fab3ad;
+    } 
+    /* Handle on hover */
+    ::-webkit-scrollbar-thumb:hover {
+        background: #2c2827;
+    }
+    /*scrolling components end*/
     .phonetabs, .tabletabs {
         display: none;
     }
