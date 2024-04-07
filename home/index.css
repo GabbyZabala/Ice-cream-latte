@@ -1,5 +1,26 @@
 body {
     margin: 0;
     padding: 0;
-    background-color: #fab3ad;
+    background-color: F0F5F9;
 }
+    header {
+        height: 90px;
+        position: sticky;
+        background-color: red;
+    }
+        .header-container {
+            display: flex;
+            justify-content: space-between;
+        }
+            .logo-section {
+                background-color: blue;
+                height: 90px;
+                width: 150px;
+                display: flex;
+                    justify-content: center;
+                    align-items: center;
+            }  
+                .logo{
+                    height: 70px;
+                    width: 70px;
+                }
