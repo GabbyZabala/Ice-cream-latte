@@ -12,7 +12,7 @@ body {
             display: flex;
             justify-content: space-between;
         }
-            .logo-section {
+            .small-section {
                 background-color: blue;
                 height: 90px;
                 width: 150px;
@@ -23,4 +23,19 @@ body {
                 .logo{
                     height: 70px;
                     width: 70px;
+                }
+            .tabs-section{
+                width: 300px;
+                background-color: green;
+                display: flex;
+                justify-content: center;
+                    align-items: center;
+            }
+                .tabs{
+                    width: 100%;
+                    list-style-type: none;
+                    display: flex;
+                        justify-content: space-evenly;
+                        align-items: center;
+                        gap: 10px;
                 }
