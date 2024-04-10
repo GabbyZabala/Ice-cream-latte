@@ -1,4 +1,19 @@
-
+/* width */
+::-webkit-scrollbar {
+    width: 1px;
+}
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #E70000;
+}
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: transparent;
+}
 
 body {
     margin: 0;
@@ -26,7 +41,8 @@ body {
                     width: 70px;
                 }
             .tabs-section{
-                width: 300px;
+                padding: 15px;
+                width: 50%;
                 display: flex;
                     justify-content: center;
                     align-items: center;
@@ -43,10 +59,18 @@ body {
                         font-weight:900;
 
                     }
+                    .tabs .active{
+                        cursor: pointer;
+                        color: #E70000;
+                    }
                     .tabs li:hover{
                         cursor: pointer;
                         color: #E70000;
                     }
+            
+        .cp {
+            display: none;
+        }
     section{
         display: flex;
             flex-direction: column;
@@ -90,12 +114,34 @@ body {
                         font-size: 48px;
                         font-weight: bolder;
                     }
+            .articles-containers{
+                display: flex;
+                    flex-direction: row;
+                    justify-content: space-around;
+                    align-items: center;
+                background-color: blue;
+            }
+                .box {
+                    flex-wrap: nowrap;
+                    width: 400px;
+                    height: 400px;
+                    background-color: red;
+                }
 @media only screen and (max-width: 600px) {
     /*styles for phones here */
+    .tabs-section{
+        display: none;
+    }
+    .cp {
+        display: block  ;
+    }
 
 }  
 @media only screen and (min-width: 601px) and (max-width: 900px) {
     /*styles for tablets here */
+        .cp-sec{
+        display: none;
+    }
 }
 @media only screen and (min-width: 901px) {
     /*styles for PCs here */
