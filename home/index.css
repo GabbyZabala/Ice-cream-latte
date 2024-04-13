@@ -1,3 +1,5 @@
+@import url('https://fonts.cdnfonts.com/css/averia-serif-libre');
+@import url('https://fonts.googleapis.com/css?family=Inter');t
 /* width */
 ::-webkit-scrollbar {
     display: none;
@@ -19,7 +21,7 @@ body {
     margin: 0;
     padding: 0;
     background-color: F0F5F9;
-    font-family: inter, sans-serif;
+    font-family: 'inter', sans-serif;
 }
     header {
         height: 90px;
@@ -138,13 +140,13 @@ body {
                     border-radius: 50%;
                 }
                 .articles-containers::-webkit-scrollbar-track {
-                    background: #f1f1f1;
+                    background: transparent;
                 }
                 /* Handle */
                 .articles-containers::-webkit-scrollbar-thumb {
                     background: #E70000;
-                    border-radius: 50px;
-                    
+                    cursor: pointer;
+                    border-radius: 50px;   
                 }
                 /* Handle on hover */
                 .articles-containers::-webkit-scrollbar-thumb:hover {
@@ -157,8 +159,58 @@ body {
                 background-color: rgb(255, 255, 255);
                 border-radius: 20px;
                 box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+                display: flex;
+                    align-items: center;
+                    flex-direction: column;
+                    justify-content: center;
             }
-            
+                .box-content{
+                    width: 90%;
+                    text-align: justify;
+                }
+                    .box-content-title{
+                        font-size: larger;
+                        font-weight: bolder;
+                    }
+                .insidebox{
+                    width: 90%;
+                    height: 75%;
+                    display: flex;
+                    justify-content: center;
+                        align-items: center;
+                        flex-wrap: wrap;
+                        gap: 10px;
+                }
+                    .small-box{
+                        width: 220px;
+                        aspect-ratio: 2/1.6;
+                        color: blue;
+                        overflow: hidden;
+                        border-radius: 20px;
+                        display: flex;
+                            justify-content: center;
+                            align-items: center;
+                    }
+                        .small-box-title{
+                            color: black;
+                            display: flex;
+                                flex-direction: column;
+                                align-items: center;
+                        }
+                            .small-box-big{
+                                font-size: 40px;
+                                font-family: 'averia serif libre';
+                                font-weight: 700;
+                            }
+                            .small-box-small{
+                                font-family: 'inter';
+                                font-style: italic;
+                                transform: translateY(-13px);
+                            }   
+                        .small-box-img {
+                            height: 100%;
+                            width: 100%;
+                        }
     footer {
         padding:10px;
         display: flex;
@@ -178,10 +230,6 @@ body {
     /*styles for tablets here */
         .cp-sec{
         display: none;
-    }
-    .box {
-        width: 600px;
-        aspect-ratio: 3/2;  
     }
 }
   
