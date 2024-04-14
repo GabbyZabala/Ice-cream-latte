@@ -74,6 +74,10 @@ body {
                     .tabs li{
                         font-weight:900;
                     }
+                        .tabs li a{
+                            text-decoration: none;
+                            color: #000;
+                        }
                     .tabs .active{
                         cursor: pointer;
                         color: #E70000;
