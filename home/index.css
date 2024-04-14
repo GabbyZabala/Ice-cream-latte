@@ -74,7 +74,19 @@ body {
                     .tabs li{
                         font-weight:900;
                     }
-                        .tabs li a{
+                        .tabs li a:link {
+                            text-decoration: none;
+                            color: #000;
+                        }
+                        a:visited {
+                            text-decoration: none;
+                            color: #000;
+                        }
+                        .tabs li a:hover {
+                            color: red;
+                            text-decoration: none;
+                        }
+                        .tabs li a:active {
                             text-decoration: none;
                             color: #000;
                         }
