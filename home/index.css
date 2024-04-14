@@ -94,7 +94,7 @@ body {
                         cursor: pointer;
                         color: #E70000;
                     }
-                    .tabs li:hover{
+                    .tabs li:hover, .tabs li:hover a{
                         cursor: pointer;
                         color: #E70000;
                     }
