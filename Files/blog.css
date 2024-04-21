@@ -1,0 +1,40 @@
+body{
+    overflow-x: hidden;
+}
+.tall-fill{
+    height: 1000px;
+}
+.blog-title-container{
+    position: relative;
+    width: 100%;
+    height: 200px;
+    display: flex;
+        align-items:center;
+    
+}
+    .blog-title{
+        position: absolute;
+            right: -50%;
+        width: 100%;
+        height: 140px;
+        background: linear-gradient(79deg, rgba(139,196,221,1) 0%, rgba(139,196,221,1) 40%, rgba(240,245,249,1) 74%, rgba(240,245,249,0.07886904761904767) 100%);        
+        box-shadow: rgba(0, 0, 245, 0.25) 0px 13px 27px 0px, rgba(255, 255, 255, 0) 0px 8px 16px -8px;
+        border-radius: 50px;
+        display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 0;
+        padding: 0 10px 0 10px;
+        color: #f0f5f9;
+        font-size: 60px;
+        font-family: Inter;
+        font-weight: bold;
+    }
+.img-container {
+    width: 100%;
+    height: 390px;
+    background-image: url(https://lh3.googleusercontent.com/drive-viewer/AKGpihY5s3kMX2NvE5Btsl92JTEnOeJ2d_0mgeP9Q_YevPhp4g19jtPCegsIiOnfoo7Dlo9AkjAMpYaim3aRXntH-IarJNKt3Ob4vJ4=s1600-rw-v1);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}

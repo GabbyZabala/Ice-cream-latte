@@ -40,7 +40,7 @@ section{
                     justify-content: right;
             }
                 .buttom-actual-info{
-                    background-color: C9DBE3;
+                    background-color: #c9dbe3d7;
                     padding: 10px 30px 10px 30px;
                     border-radius: 5px;
                 }
@@ -48,6 +48,7 @@ section{
         max-width: 480px;
         width: 50%;
         position: relative;
+            z-index: 11;
         display: flex;
             align-items: start;
             justify-content: center;
