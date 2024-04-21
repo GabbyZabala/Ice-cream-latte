@@ -25,10 +25,27 @@ body{
             justify-content: center;
             gap: 0;
         padding: 0 10px 0 10px;
-        color: #f0f5f9;
-        font-size: 60px;
-        font-family: Inter;
-        font-weight: bold;
+    }
+        .title-blog{
+            color: #f0f5f9;
+            font-size: 60;
+            width: 100px;
+            font-family: Inter;
+            font-weight: 900;
+            transform: translateX(20px);
+        }
+.blog-container{
+    padding: 10px;
+    width: 100%;
+    display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+}
+    .blog-paragraph-container {
+        font-size: 20;
+        white-space: break-spaces;
+        text-align: justify;
     }
 .img-container {
     width: 100%;
