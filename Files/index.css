@@ -113,12 +113,13 @@ body {
                                 cursor: pointer;
                             }
                             .choices {
-                                background-color: #D5DFE5;
-                                padding: 5px 20px 5px 20px;
+                                transform: translateX(-10px);
                                 position: fixed;
                                 display: none;
                             }
                                 .choices li{
+                                    background-color: #d5dfe59c;
+                                    padding: 5px 20px 5px 20px;
                                     list-style-type: none;
                                 }
     section{
