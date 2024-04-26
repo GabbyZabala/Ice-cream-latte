@@ -18,8 +18,10 @@
 }
 
 body {
+    overflow-x: hidden;
     margin: 0;
     padding: 0;
+    position: relative;
     background-color: #F0F5F9;
     font-family: 'inter', sans-serif;
 }
@@ -32,20 +34,11 @@ body {
         box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
     }
         .header-container {
+            height: 100%;
+            padding: 10px;
             display: flex;
             justify-content: space-between;
         }
-            .small-section {
-                height: 90px;
-                width: 150px;
-                display: flex;
-                    justify-content: center;
-                    align-items: center;
-            }  
-                .logo{
-                    height: 70px;
-                    width: 70px;
-                }
             .cp-sec{
                 height: 90px;
                 width: 90px;
@@ -60,6 +53,7 @@ body {
             .tabs-section{
                 padding: 15px;
                 width: 50%;
+                height: 50%;
                 display: flex;
                     justify-content: center;
                     align-items: center;
@@ -75,11 +69,7 @@ body {
                     .tabs li{
                         font-weight:900;
                     }
-                        .tabs li a:link {
-                            text-decoration: none;
-                            color: #000;
-                        }
-                        a:visited {
+                        .tabs li a:link, .tabs li a:visited {
                             text-decoration: none;
                             color: #000;
                         }
@@ -122,6 +112,96 @@ body {
                                     padding: 5px 20px 5px 20px;
                                     list-style-type: none;
                                 }
+            .small-section {
+                height: 50%;
+                padding: 10px;
+                display: flex;
+                    justify-content: center;
+                    align-items: center;
+            } 
+                .logo{
+                    height: 70px;
+                    width: 70px;
+                }
+            .toggle-container{
+                padding: 10px;
+                position: relative;
+            } 
+                    .menu-section{
+                        transform: translateX(-1000px);
+                        transition: 1.5s;
+                        position: absolute;
+                            top: 1;
+                            right: 10px;
+                        padding: 10px;
+                        display: flex;
+                            align-items: center;
+                            justify-content: right;
+                    }
+                .fren {
+                    transform: translateX(1000px);
+                    width:100%;
+                    height: 100%;
+                    transition: 1s;
+                        
+                }
+                .frennen {
+                    transition: 1s;
+                    transform: translateX(0);
+                    position: fixed;
+                    top: 0;
+                    right: 0;
+                    backdrop-filter: blur(5px);
+                }
+                    .frennen .menu-section{
+                        transform: translateX(0);
+                        z-index: 5;
+                        top: 0;
+                        right: 0;
+                        position: absolute;
+                        transition: 1.5s;
+                        background-color: #920000;
+                        height: 70px;
+                        width: 100%;
+                        max-width: 510px;
+                        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+                    }
+                    .frennen .menu-section .lan {
+                        filter: grayscale(190%) contrast(100%) invert(200%);
+                    }       
+                        .menu-time-one {
+                            transition: 1s;
+                        }
+                        .menu-time-two{
+                            transition: 1.5s;
+                        }
+                        .menu-time-three{
+                            transition: 2s;
+                        }
+                        .menu-time-four{
+                            transition: 2.5s;
+                        }
+                    .small-boxes {
+                        position: absolute;
+                            top: 0;
+                            right: 0;
+                        width: 100%;
+                        max-width: 500px;
+                        height: 100%;
+                        padding: 90px 10px 10px 10px;
+                        background-color: #E70000   ;
+                    }
+                        .box-tabs {
+                            width: 90%;
+                            height: 70px;
+                            border-bottom: solid 1px white;
+                            color: white;
+                            font-size: 20px;
+                            font-family: Inter;
+                            padding: 0 0 0 10%;
+                            display: flex;
+                                align-items: center;
+                        }
     section{
         display: flex;
             flex-direction: column;
