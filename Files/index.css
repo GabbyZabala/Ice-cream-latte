@@ -168,7 +168,10 @@ body {
                     }
                     .frennen .menu-section .lan {
                         filter: grayscale(190%) contrast(100%) invert(200%);
-                    }       
+                    }
+                    .frennen .small-boxes {
+                        display: block;
+                    }
                         .menu-time-one {
                             transition: 1s;
                         }
@@ -182,6 +185,7 @@ body {
                             transition: 2.5s;
                         }
                     .small-boxes {
+                        display: none;
                         position: absolute;
                             top: 0;
                             right: 0;
