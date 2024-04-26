@@ -196,6 +196,7 @@ body {
                         background-color: #E70000   ;
                     }
                         .box-tabs {
+                            cursor: pointer;
                             width: 90%;
                             height: 70px;
                             border-bottom: solid 1px white;
@@ -206,6 +207,58 @@ body {
                             display: flex;
                                 align-items: center;
                         }
+                        .menu-recco-toggle-container {
+                            display: flex;
+                                flex-direction: column;
+                                align-items: flex-end;
+                        }
+                            .menu-drop-toggle{
+                                width: 95%;
+                                overflow: hidden;
+                                transition: 1s;
+                            }
+                                .menu-reco-hide{
+                                    animation: nice-down 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+                                }
+                                .menu-reco-show{
+                                    display: block;
+                                    animation: nice-top 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+                                    transition: 1s;
+                                }
+                                @keyframes nice-top {
+                                    0% {
+                                      height: 0;
+                                    }
+                                    100% {
+                                      height: 400px;
+                                    }
+                                  }
+                                @keyframes nice-down {
+                                    0%{
+                                        height: 400px;
+                                    }
+                                    100%{
+                                        height: 0;
+                                    }
+                                }
+                                .menu-drop-align {
+                                    background-color: white;
+                                    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+                                    padding: 10px;
+                                    display: flex;
+                                        flex-direction: column;
+                                        align-items: flex-end;
+                                        gap: 5px;
+                                }
+                                    .mini-box-tab{
+                                        cursor: pointer;
+                                        height: 70px;
+                                        width: 90%;
+                                        padding: 0 0 0 10px;
+                                        background-color: red;
+                                        display: flex;
+                                            align-items: center;
+                                    }
     section{
         display: flex;
             flex-direction: column;
