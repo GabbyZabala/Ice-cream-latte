@@ -126,6 +126,7 @@ body {
             .toggle-container{
                 padding: 10px;
                 position: relative;
+                z-index: 12;
             } 
                     .menu-section{
                         transform: translateX(-1000px);
@@ -155,7 +156,7 @@ body {
                 }
                     .frennen .menu-section{
                         transform: translateX(0);
-                        z-index: 5;
+                        z-index: 15;
                         top: 0;
                         right: 0;
                         position: absolute;

@@ -48,7 +48,7 @@ section{
         max-width: 480px;
         width: 50%;
         position: relative;
-            z-index: 11;
+            z-index: 10;
         display: flex;
             align-items: start;
             justify-content: center;
