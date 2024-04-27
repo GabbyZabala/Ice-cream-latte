@@ -172,18 +172,6 @@ body {
                     .frennen .small-boxes {
                         display: block;
                     }
-                        .menu-time-one {
-                            transition: 1s;
-                        }
-                        .menu-time-two{
-                            transition: 1.5s;
-                        }
-                        .menu-time-three{
-                            transition: 2s;
-                        }
-                        .menu-time-four{
-                            transition: 2.5s;
-                        }
                     .small-boxes {
                         display: none;
                         position: absolute;
@@ -255,10 +243,26 @@ body {
                                         height: 70px;
                                         width: 90%;
                                         padding: 0 0 0 10px;
-                                        background-color: red;
+                                        background-color: #920000;
+                                        color: #F0F5F9;
+                                        font-family: Inter;
+                                        font-weight: bolder;
+                                        border-radius: 10px;
                                         display: flex;
                                             align-items: center;
                                     }
+                                    .small-boxes a:link,
+                                    .small-boxes a:visited,
+                                    .small-boxes a:hover,
+                                    .small-boxes a:active,
+                                    .menu-drop-align a:link,
+                                    .menu-drop-align a:visited,
+                                    .menu-drop-align a:hover,
+                                    .menu-drop-align a:active {
+                                        text-decoration: none;
+                                        color: #F0F5F9;
+                                    }
+                                    
     section{
         display: flex;
             flex-direction: column;

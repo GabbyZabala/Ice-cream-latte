@@ -6,7 +6,7 @@
         <link rel="stylesheet" href="Files/index.css">
         <link rel="stylesheet" href="Files/about.css">
         <link rel="icon" href="https://lh3.googleusercontent.com/drive-viewer/AKGpihZtdiJPyOswfD_DJEsACWzOrultPVjdtW7b8lyTBm-L43L3RU_KS4kzldrxJhG-Mi-WdL0_rt0sNXO3aSWgOFsaOMsQIhNd32c=s2560">
-        <script src="Files/index.js" defer> </script>
+        <script src="/Files/index.js" defer> </script>
     </head>
     <body>
         <header>
@@ -31,8 +31,30 @@
                         <li><a href="about.html">About</a></li>
                     </div>
                 </div>
-                <div class="small-section cp-sec">
-                    <img src="https://lh3.googleusercontent.com/drive-viewer/AKGpihaaiS4-03EVGIIfg8VuXHbvPnBHR682frd3B8itBDSd71AxOByZKl04V6r5zNmEsEJ7I4MkGmNCl4olec_YRM72xt7nxCduqdA=s2560" alt="lala" class="cp">
+                <div class="toggle-container ">
+                    <div class="fren cp" id="box">
+                        <div class="menu-section" onclick="menutogglebutton()">
+                            <img class="lan" src="https://lh3.googleusercontent.com/drive-viewer/AKGpihaaiS4-03EVGIIfg8VuXHbvPnBHR682frd3B8itBDSd71AxOByZKl04V6r5zNmEsEJ7I4MkGmNCl4olec_YRM72xt7nxCduqdA=s2560" alt="lala"/>
+                            <!--add cp class on  class="cp" image-->
+                        </div>
+                        <div class="small-boxes">
+                            <a href="/index.html"><div class="box-tabs">Home</div></a>
+                            <div class="menu-recco-toggle-container">
+                                <div class="box-tabs"  onclick="menurecotoggle()">Recommendations</div>
+                                <div class="menu-drop-toggle menu-reco-hide" id="menu-reco">
+                                    <div class="menu-drop-align">
+                                        <div class="mini-box-tab">Quick Eats</div>
+                                        <div class="mini-box-tab">Budget Friendly</div>
+                                        <div class="mini-box-tab">Splurge</div>
+                                        <div class="mini-box-tab">Out of Campus</div>
+                                        <div class="mini-box-tab">Discover</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <a href="/blog.html"><div class="box-tabs">Blog</div></a>
+                            <a href="/about.html"><div class="box-tabs">About</div></a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </header>
