@@ -234,12 +234,13 @@ body {
                                     background-color: white;
                                     box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
                                     padding: 10px;
+                                    width: 100%;
                                     display: flex;
                                         flex-direction: column;
                                         align-items: flex-end;
                                         gap: 5px;
                                 }
-                                    .mini-box-tab{
+                                    .menu-drop-align a{  
                                         cursor: pointer;
                                         height: 70px;
                                         width: 90%;
