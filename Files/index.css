@@ -286,18 +286,36 @@ body {
                     flex-direction: column;
                     justify-content: space-around;
             }
+                .headPhoto{
+                    height: 500px;
+                    object-fit: cover;
+                    background-blend-mode:darken;
+                }
                 .intro-item {
+                    z-index: 1;
                     margin-left: 80px ;
                     width: 400px;
-                    color: #fff;
+                    color: #ffff;
+                    font-weight: 900;
                 }
                     .title-top{
+                        z-index: 2;
                         font-size: 100px;
-                        font-weight: bold;
+                        top: 8vw;
+                        left:16vw;
                     }
                     .title-down{
                         font-size: 48px;
-                        font-weight: bold;
+                        top: 16vw;
+                        left:16vw;
+                    }
+                    .intro{
+                        margin-left: 80px ;
+                        width: 400px;
+                        color: #fff;
+                        font-weight: 600;
+                        top: 35vw;
+                        left:12vw;
                     }
                 .divider-title {
                     padding-left: 10px;
