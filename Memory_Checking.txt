@@ -1,0 +1,3 @@
+wmic memphysical get memorydevices
+wmic memorychip get devicelocator, capacity
+wmic memphysical get maxcapacity
