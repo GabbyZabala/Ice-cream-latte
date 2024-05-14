@@ -278,13 +278,14 @@ body {
             .intro-container{
                 width: 100%;
                 height: 500px;
-                background: url(https://lh3.googleusercontent.com/drive-viewer/AKGpihZGhJyKcfCN0lBwBPDOYJndZZjOxKKK8AjKjm-UU6aCSZ_aLDCyCQKWa3QURCNA0LlzMJsVG3TZtjVRIJU96ipKCPV_OIrZQXE=s1600-v0);
+                background: url(Photo/Header.jpg);
                 background-size: cover;
                 background-position: center;
                 background-repeat: no-repeat;
                 display: flex;
                     flex-direction: column;
                     justify-content: space-around;
+                backdrop-filter: invert(100);
             }
                 .headPhoto{
                     height: 500px;
